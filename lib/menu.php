@@ -65,20 +65,26 @@ class Menu{
 	}*/
 
     public function creerMenu($composantActif,$nomMenu){
-        $menu = "<nav class='ulnav'><div class='menu-icon menu-icon-cross'><span></span></div>";
+        $menu = "<div class='col-xs-offset-3 col-lg-6 divnav'><nav class='ulnav'>";
         foreach($this->composants as $composant){
             if($composant[1] == $composantActif){
                 $menu .=  "<a class='disapear'>" . $composant[1] ."</a>";
             }
-            else{
+            elseif($composant[0] == "projects"){
                 $menu .= "<a class='disapear' href='index.php?" . $nomMenu ;
                 $menu .= "=" . $composant[0] . "' >";
+                $menu .=  $composant[1] ;
+                $menu .= "</a><div class='menu-icon menu-icon-cross'><span></span></div>";
+            }
+            else{
+                $menu .= "<a class='disapear' href='index.php?" . $nomMenu ;
+                $menu .= "=" . $composant[0] . " ' >";
                 $menu .=  $composant[1] ;
                 $menu .= "</a>";
             }
         }
-        $menu .= "<a class='hrefimg' href='#'></a>";
-        $menu .= "</nav>";
+        //$menu .= "<a class='hrefimg' href='#'></a>";
+        $menu .= "</nav></div>";
         return $menu ;
     }
 

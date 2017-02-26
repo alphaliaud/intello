@@ -1,19 +1,31 @@
 <header class="headernav">
     <?php include_once 'header.php'; ?>
 </header>
-<div class="site-container">
-    <div class="col-8 col-offset-2 col-m-6 col-m-offset-3 col-l-4 col-l-offset-4 menu">
-        <img class="col-img1 logoscroll" src="image/chapeau.svg" width="500px" height="500px">
+
+    <div class="col-xs-12 menu">
+        <div class=""">
+            <ul class="slide">
+                <li>
+                    <img class="col-img1 logoscroll slider" src="image/pic.jpg" >
+                    <span class="slider-info"></span>
+                    <div class="col-xs-3 slider-txt">
+                        <h1 class="slider-title">We run on programming</h1>
+                        <p class="slider-corp">Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="slider-span">
+            <img class="slider-prev" src="image/arrow1.png" onclick="" >
+            <img class="slider-next" src="image/arrow2.png" onclick="" >
+        </div>
     </div>
 
-    <div class="svghome1">
-        <svg style="width: 100%; height: 100px;margin-bottom: -7px;">
-            <path d="M0 20 L 300 95 L 1440 0 L 1440 100 L 0 100 L 0 20 " class="pathhome1"></path>
-        </svg>
-    </div>
-
-    <div class="col-12 col-m-12 col-l-12 home1">
-
+    <div class="col-xs-12 home1">
+        <div class="col-xs-4 col-xs-offset-4" style="margin-top:150px">
+            <h1 class="slider-title">We run on programming</h1>
+            <p class="slider-corp">Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte.</p>
+        </div>
     </div>
 
     <div class="svghome2">
@@ -22,15 +34,19 @@
         </svg>
     </div>
 
-    <div class="col-12 col-m-12 col-l-12 home2 text">
-        <div class="col-12 col-m-3 col-l-3 ">
-            <div class="card-home-haut">
+    <div class="col-xs-12 home2 text">
+        <div class="col-xs-3">
+            <div class="card-home-haut" style="background-image: url('image/jf.jpg');">
             </div>
             <div class="card-home-bas">
             </div>
         </div>
-        <div class="col-12 col-m-3 col-l-3" style="padding-top:40px;padding-left:0px;">
-            <div class="card-home-haut">
+        <div class="col-xs-offset-1 col-xs-4">
+            <h1 class="slider-title" style="color:black">Un jeune équipe composée de deux frères passionnés</h1>
+            <p class="slider-corp" style="color:black">Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte.</p>
+        </div>
+        <div class="col-xs-offset-1 col-xs-3 ">
+            <div class="card-home-haut" style="background-image: url('image/jl.jpg');">
             </div>
             <div class="card-home-bas">
             </div>
@@ -43,9 +59,9 @@
         </svg>
     </div>
 
-    <div class="col-12 col-m-12 col-l-12 home3">
+    <div class="col-xs-12 col-sm-12 col-lg-12 home3">
     </div>
-</div>
+
 <script type="text/JavaScript" src="javascript/Intersection.js"></script>
 
 <script type="text/JavaScript" src="javascript/intello.js"></script>
